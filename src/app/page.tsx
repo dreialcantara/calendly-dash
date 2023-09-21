@@ -2,12 +2,14 @@
 import React, { useEffect, useState } from "react";
 import DateAvailable from "@/components/DateAvailable";
 import { CenteredContainer } from "@/styles/CenteredContainer";
-import ContainerBody from "@/styles/ContainerBody";
+import { ContainerBody, CustomH1 } from "@/styles/ContainerBody";
 
 const Account: React.FC = () => {
   return (
     <ContainerBody>
-      <h1>Next Available Times</h1>{" "}
+      <CustomH1>
+        <a>Next Available Times</a>{" "}
+      </CustomH1>
       <CenteredContainer>
         <DateAvailable
           text="Group Hair Loss Treatment Onboarding"

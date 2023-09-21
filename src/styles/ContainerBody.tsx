@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const ContainerBodyWrapper = styled.div`
-  height: 85vh;
+  height: auto;
+  width: auto;
   border: 1px solid #ccc;
   padding: 20px;
   display: flex;
@@ -13,6 +14,11 @@ const ContainerBodyWrapper = styled.div`
   background-color: #05643d;
 `;
 
+const CustomH1 = styled.h1`
+  color: white;
+  font-size: 35px;
+`;
+
 interface ContainerBodyProps {
   children: React.ReactNode;
 }
@@ -21,4 +27,4 @@ const ContainerBody: React.FC<ContainerBodyProps> = ({ children }) => {
   return <ContainerBodyWrapper>{children}</ContainerBodyWrapper>;
 };
 
-export default ContainerBody;
+export { ContainerBody, CustomH1 };
