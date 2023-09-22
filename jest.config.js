@@ -13,10 +13,6 @@ module.exports = {
     rootDir: "./src",
     testPathIgnorePatterns: ["/node_modules/", "/build/"],
     moduleNameMapper: {
-        "^@/(.*)$": "<rootDir>/$1",
-    },
-    // Adicionar a seguinte configuração
-    moduleNameMapper: {
         "^.+\\.esm$": "<rootDir>/$&",
     },
 };
